@@ -90,7 +90,6 @@ void mousePressed () {
   for (int i=0; i<10; i++) {
     for (int j=0; j<2; j++) {
       if (mouseX<=(punto[i][0]+10) && mouseX>=(punto[i][0]-10) && mouseY<=(punto[i][1]+10) && mouseY>=(punto[i][1]-10)) {
-        println("ALAVERGATODO");
         x=punto[i][0];
         y=punto[i][1];
         P=false;
@@ -102,8 +101,7 @@ void mousePressed () {
 void mouseReleased () {
   for (int i=0; i<10; i++) {
     for (int j=0; j<2; j++) {
-      if (mouseX<=(punto[i][0]+10) && mouseX>=(punto[i][0]-10) && mouseY<=(punto[i][1]+10) && mouseY>=(punto[i][1]-10)) {
-        println("ALAVERGATODO");
+      if (mouseX<=(punto[i][0]+10) && mouseX>=(punto[i][0]-10) && mouseY<=(punto[i][1]+10) && mouseY>=(punto[i][1]-10)) 
         z=punto[i][0];
         w=punto[i][1];
         Q=false;
