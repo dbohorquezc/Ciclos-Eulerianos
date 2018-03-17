@@ -69,6 +69,88 @@ void grafoiq(){
 switch(a){
 case 0:
     background(100);    
+fill(0,0,200);
+    rect(width/2-155,height*2/4-70/2,110,60,15);
+    fill(255, 204, 0);
+    rect(width/2-155,height*2/3-40,110,60,15);      
+    fill(5, 75, 80, 80);
+    fill(0,100,0);
+    rect(width/2+45,height*2/4-70/2,110,60,15);
+    fill(150,50,30);
+    rect(width/2+45,height*2/3-40,110,60,15);
+    fill(30, 155, 130);
+    rect(width/2-55,height*3/4,110,60,15);
+    fill(0);
+    textSize(50);
+    textAlign(CENTER);   
+    textSize(56);
+    text("¡Bienvenido a Connect!", width*1/2,height*1/4 );
+    textSize(28);
+    text("Nivel 1", width/2-100, height*2/4);
+    text("Nivel 3", width/2-100, height*2/3);
+    text("Nivel 2", width/2+100, height*2/4);
+    text("Nivel 4", width/2+100, height*2/3);
+    text("Nivel 5", width/2, height*3/4+40);
+    textAlign(CENTER);
+    textSize(16);
+    text("Elija el tamaño",width*1/10,height*2/4);
+    text("de los nodos:",width*1/10,height*2/4+15);
+    
+    fill(150);
+    rect(width*1/35,height*2/4+30,30,30);
+    rect(width*1/35+50,height*2/4+30,30,30);
+    rect(width*1/35+100,height*2/4+30,30,30);
+    rect(width*1/35,height*2/4+80,30,30);
+    rect(width*1/35+50,height*2/4+80,30,30);
+    rect(width*1/35+100,height*2/4+80,30,30);
+    rect(width*1/35,height*2/4+130,30,30);
+    rect(width*1/35+50,height*2/4+130,30,30);
+    rect(width*1/35+100,height*2/4+130,30,30);
+    fill(0);
+    text("5",width*1/35+15,height*2/4+50);
+    text("10",width*1/35+65,height*2/4+50);
+    text("15",width*1/35+115,height*2/4+50);
+    text("20",width*1/35+15,height*2/4+100);
+    text("25",width*1/35+65,height*2/4+100);
+    text("30",width*1/35+115,height*2/4+100);
+    text("35",width*1/35+15,height*2/4+150);
+    text("40",width*1/35+65,height*2/4+150);
+    text("45",width*1/35+115,height*2/4+150);
+    if(mousePressed) {
+    if(width*1/35<=mouseX && mouseX<=width*1/35+30 && height*2/4+30<=mouseY && mouseY<=height*2/4+60){
+    nodo=5;
+    }
+    if(width*1/35+50<=mouseX && mouseX<=width*1/35+80 && height*2/4+30<=mouseY && mouseY<=height*2/4+60){
+    nodo=10;
+    }
+    if(width*1/35+100<=mouseX && mouseX<=width*1/35+130 && height*2/4+30<=mouseY && mouseY<=height*2/4+60){
+    nodo=15;
+    println (nodo);
+    }
+    if(width*1/35<=mouseX && mouseX<=width*1/35+30 && height*2/4+80<=mouseY && mouseY<=height*2/4+110){
+    nodo=20;
+    println (nodo);
+    }
+    if(width*1/35+50<=mouseX && mouseX<=width*1/35+80 && height*2/4+80<=mouseY && mouseY<=height*2/4+110){
+    nodo=25;
+    println (nodo);
+    }
+    if(width*1/35+100<=mouseX && mouseX<=width*1/35+130 && height*2/4+80<=mouseY && mouseY<=height*2/4+110){
+    nodo=30;
+    println (nodo);
+    }
+    if(width*1/35<=mouseX && mouseX<=width*1/35+30 && height*2/4+130<=mouseY && mouseY<=height*2/4+160){
+    nodo=35;
+    println (nodo);
+    }
+    if(width*1/35+30<=mouseX && mouseX<=width*1/35+80 && height*2/4+130<=mouseY && mouseY<=height*2/4+160){
+    nodo=40;
+    println (nodo);
+    }
+    if(width*1/35+100<=mouseX && mouseX<=width*1/35+130 && height*2/4+130<=mouseY && mouseY<=height*2/4+160){
+    nodo=45;
+    println (nodo);
+    }
     if (width/2-155<=mouseX && mouseX<=width/2-155+110 && height*2/4-70/2<=mouseY && mouseY<=height*2/4-70/2+60) {
     level=1;
     }
@@ -395,4 +477,3 @@ for (int i=0; i<10; i++) {
   break;
 }
 }
-
