@@ -364,6 +364,10 @@ void nivel(int a)
     rect(width*1/35, height*2/4+130, 30, 30);
     rect(width*1/35+50, height*2/4+130, 30, 30);
     rect(width*1/35+100, height*2/4+130, 30, 30);
+    stroke(255, 0, 0);
+    strokeWeight(nodo-10);
+    fill(0);
+    ellipse(width*1/35+65, height*1/2+220, nodo, nodo);
     fill(255, 255, 255);
     text("20", width*1/35+15, height*2/4+100);
     text("25", width*1/35+65, height*2/4+100);
