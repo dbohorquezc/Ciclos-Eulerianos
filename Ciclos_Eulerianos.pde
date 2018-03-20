@@ -507,8 +507,6 @@ void nivel(int a)
     background(55, 84, 243);
     strokeWeight(1);
     stroke(0);
-    //fill(80);
-    //quad(0, 0, 800, 0, 800, 800, 0, 800);
     fill(255, 255, 255);
     textAlign(CENTER);
     textSize(56);
