@@ -1,0 +1,30 @@
+ class Grafo{
+    
+  
+    //Método para pintar lineas
+  void setDib_lineas(int[][] graf, int g, ArrayList<PVector>punticos5) {
+    //PVector punto1;
+    //PVector punto2;
+    for (int i=0; i<g; i++) {
+      for (int j=0; j<g; j++) {
+        if (graf[i][j]==1) {
+          stroke(208, 206, 212);
+          line((int)punticos5.get(i).x, (int)punticos5.get(i).y, (int)punticos5.get(j).x, (int)punticos5.get(j).y);
+        }
+        if (graf[i][j]==2) {
+          stroke(100, 100, 100);
+          line((int)punticos5.get(i).x, (int)punticos5.get(i).y, (int)punticos5.get(j).x, (int)punticos5.get(j).y);
+        }
+      }
+    }
+  }
+  
+  //Metodo para pintar las elipses
+  void setDib_elipses(ArrayList<PVector>punticos4, int f) {
+    for (int i=0; i<f; i++) {
+      ellipse(punticos4.get(i).x, punticos4.get(i).y, nodo, nodo);
+    }
+  }
+
+
+}
